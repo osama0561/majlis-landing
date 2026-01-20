@@ -34,15 +34,11 @@ export const Navbar: React.FC = () => {
             className="flex items-center gap-3 group"
             aria-label="مجلس الأتمتة - الصفحة الرئيسية"
           >
-            {/* Logo Placeholder - Replace with actual logo */}
-            <div className="w-12 h-12 bg-gradient-to-br from-terracotta-500 to-terracotta-600 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-              <span className="text-cream-50 font-serif font-bold text-xl">م</span>
-            </div>
-            <div className="hidden sm:block">
-              <span className="font-serif text-xl font-bold text-forest-800">
-                مجلس الأتمتة
-              </span>
-            </div>
+            <img
+              src="/images/majles logo.png"
+              alt="مجلس الأتمتة"
+              className="h-12 w-auto"
+            />
           </a>
 
           {/* CTA Button */}
