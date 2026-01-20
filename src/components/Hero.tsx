@@ -131,29 +131,14 @@ export const Hero: React.FC = () => {
 
           {/* Image - Left side in RTL */}
           <div className="order-1 lg:order-2 relative">
-            {/* Main Image Placeholder */}
+            {/* Main Image */}
             <div className="relative">
-              <div className="aspect-[4/3] bg-gradient-to-br from-terracotta-400 to-terracotta-600 rounded-3xl shadow-2xl shadow-terracotta-500/20 overflow-hidden">
-                {/* Placeholder pattern */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center text-cream-50/90">
-                    <svg
-                      className="w-24 h-24 mx-auto mb-4 opacity-50"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1}
-                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                      />
-                    </svg>
-                    <p className="text-lg font-medium">صورتك هنا</p>
-                    <p className="text-sm opacity-70">Hero Image Placeholder</p>
-                  </div>
-                </div>
+              <div className="aspect-[4/3] rounded-3xl shadow-2xl shadow-terracotta-500/20 overflow-hidden">
+                <img
+                  src="/images/hero.png"
+                  alt="مجلس الأتمتة"
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Floating Card */}
@@ -163,7 +148,7 @@ export const Hero: React.FC = () => {
                     <span className="text-2xl">🎯</span>
                   </div>
                   <div>
-                    <p className="font-bold text-forest-800">+155</p>
+                    <p className="font-bold text-forest-800">+55</p>
                     <p className="text-sm text-forest-600/70">عضو نشط</p>
                   </div>
                 </div>
