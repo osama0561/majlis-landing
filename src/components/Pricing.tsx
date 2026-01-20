@@ -93,8 +93,7 @@ export const Pricing: React.FC = () => {
                 size="lg"
                 fullWidth
                 onClick={() => {
-                  // Handle subscription
-                  window.open('#', '_blank');
+                  window.open('https://www.skool.com/majles/about?ref=da9590f615394c4693647ac4b40198a5', '_blank');
                 }}
                 ariaLabel="اشترك الآن في مجلس الأتمتة"
                 icon={

@@ -53,8 +53,7 @@ export const Hero: React.FC = () => {
                 variant="primary"
                 size="lg"
                 onClick={() => {
-                  const pricingSection = document.getElementById('pricing');
-                  pricingSection?.scrollIntoView({ behavior: 'smooth' });
+                  window.open('https://www.skool.com/majles/about?ref=da9590f615394c4693647ac4b40198a5', '_blank');
                 }}
                 ariaLabel="انضم الآن لمجلس الأتمتة"
                 icon={
