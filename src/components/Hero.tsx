@@ -27,7 +27,7 @@ export const Hero: React.FC = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-terracotta-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-terracotta-500"></span>
               </span>
-              <span className="font-semibold text-sm">الباقي {spotsLeft} مقعد فقط!</span>
+              <span className="font-semibold text-sm">الباقي {spotsLeft} مقعد بالسعر المخفض</span>
             </div>
 
             {/* Main Headline */}
@@ -35,17 +35,16 @@ export const Hero: React.FC = () => {
               id="hero-heading"
               className="heading-xl text-forest-800 mb-6 text-balance"
             >
-              <span className="font-serif">مجلس الأتمتة</span>
+              <span className="font-serif text-terracotta-500">امّن مستقبلك</span>
               <br />
-              <span className="text-terracotta-500">الحل النهائي</span> لكسر
+              بتعلم مهارات
               <br />
-              <span className="italic">"عقدة البدء"</span>
+              <span className="italic">الذكاء الاصطناعي</span>
             </h1>
 
             {/* Subtitle */}
             <p className="body-lg text-forest-600/80 mb-8 max-w-xl mx-auto lg:mx-0">
-              والربح فعليًا من خدمات الأتمتة في السعودية. انضم لمجتمع العرب الناجحين
-              واحصل على أنظمة جاهزة ودعم شخصي.
+              تعلم أتمتة المهام بالذكاء الاصطناعي خطوة بخطوة، حتى لو ما عندك أي خلفية تقنية. انضم لـ +55 عضو بدأوا يتقنون مهارة المستقبل.
             </p>
 
             {/* CTA Buttons */}
