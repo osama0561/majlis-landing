@@ -24,39 +24,19 @@ export const SocialProof: React.FC = () => {
           ماذا يقول أعضاء المجلس؟
         </p>
 
-        {/* Testimonials Grid - Larger Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {testimonials.slice(0, 3).map((testimonial) => (
+        {/* Testimonials - Much Larger, 2 per row max */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 max-w-5xl mx-auto">
+          {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
               className="group cursor-pointer"
               onClick={() => setSelectedImage(testimonial.image)}
             >
-              <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-cream-200 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300">
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-cream-200 hover:shadow-2xl hover:border-terracotta-300 hover:scale-[1.02] transition-all duration-300">
                 <img
                   src={testimonial.image}
                   alt={testimonial.alt}
-                  className="w-full h-auto object-contain"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Second Row - 2 Cards Centered */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 mt-6 md:mt-8 max-w-4xl mx-auto">
-          {testimonials.slice(3, 5).map((testimonial) => (
-            <div
-              key={testimonial.id}
-              className="group cursor-pointer"
-              onClick={() => setSelectedImage(testimonial.image)}
-            >
-              <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-cream-200 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.alt}
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto"
                   loading="lazy"
                 />
               </div>
@@ -73,10 +53,10 @@ export const SocialProof: React.FC = () => {
       {/* Lightbox Modal */}
       {selectedImage && (
         <div
-          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4 cursor-pointer"
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 cursor-pointer"
           onClick={() => setSelectedImage(null)}
         >
-          <div className="relative max-w-4xl max-h-[90vh] w-full">
+          <div className="relative max-w-5xl max-h-[90vh] w-full">
             <button
               className="absolute -top-12 left-1/2 -translate-x-1/2 text-white text-lg flex items-center gap-2 hover:text-amber-400 transition-colors"
               onClick={() => setSelectedImage(null)}

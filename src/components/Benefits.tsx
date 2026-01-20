@@ -184,11 +184,11 @@ export const Benefits: React.FC = () => {
                 `}
               >
                 <div className="relative">
-                  <div className="aspect-[4/3] rounded-3xl shadow-xl overflow-hidden border border-cream-200">
+                  <div className="rounded-3xl shadow-xl overflow-hidden border border-cream-200 bg-white">
                     <img
                       src={benefit.image}
                       alt={benefit.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-auto"
                       loading="lazy"
                     />
                   </div>
