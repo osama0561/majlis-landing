@@ -5,6 +5,7 @@ export { Navbar } from './Navbar';
 export { Hero } from './Hero';
 export { SocialProof } from './SocialProof';
 export { Benefits } from './Benefits';
+export { Curriculum } from './Curriculum';
 export { Pricing } from './Pricing';
 export { FAQ } from './FAQ';
 export { Footer } from './Footer';

@@ -4,6 +4,7 @@ import {
   Hero,
   SocialProof,
   Benefits,
+  Curriculum,
   Pricing,
   FAQ,
   Footer,
@@ -25,6 +26,9 @@ const App: React.FC = () => {
 
         {/* Benefits - Zig-Zag Layout */}
         <Benefits />
+
+        {/* Curriculum - What's Inside */}
+        <Curriculum />
 
         {/* Pricing Section */}
         <Pricing />
