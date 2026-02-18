@@ -163,7 +163,7 @@ export const Pricing: React.FC = () => {
               </svg>
             </div>
             <h3 className="text-xl font-bold text-amber-600 mb-2">مو راضي؟ أرجعلك فلوسك كاملة</h3>
-            <p className="text-forest-700/80 leading-relaxed">
+            <p className="text-forest-900 leading-relaxed">
               جرّب المجلس أسبوع كامل. إذا دخلت وشفت المحتوى وما حسيت إنه يستاهل — راسلني مباشرة وأرجعلك كل شي. ما راح تحتاج تشرح أو تبرر.
             </p>
           </div>
