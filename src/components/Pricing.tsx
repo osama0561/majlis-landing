@@ -60,11 +60,11 @@ export const Pricing: React.FC = () => {
                 <p className="text-forest-600/70">
                   / شهريًا
                 </p>
-                <div className="mt-4 inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
+                <div className="mt-4 inline-flex items-center gap-2 bg-terracotta-500/10 text-terracotta-600 px-4 py-2 rounded-full text-sm font-medium">
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                   </svg>
-                  <span>اشتراكك يبقى $68 للأبد!</span>
+                  <span>اشتراكك يبقى $68 للأبد ما دمت معنا</span>
                 </div>
               </div>
 
@@ -162,9 +162,9 @@ export const Pricing: React.FC = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-amber-600 mb-2">ضمان ذهبي - 7 أيام بدون مخاطرة</h3>
+            <h3 className="text-xl font-bold text-amber-600 mb-2">مو راضي؟ أرجعلك فلوسك كاملة</h3>
             <p className="text-forest-700/80 leading-relaxed">
-              جرّب المجلس لمدة أسبوع كامل. إذا ما حسيت بالقيمة، راسلني وأرجعلك كامل المبلغ - بدون أي أسئلة.
+              جرّب المجلس أسبوع كامل. إذا دخلت وشفت المحتوى وما حسيت إنه يستاهل — راسلني مباشرة وأرجعلك كل شي. ما راح تحتاج تشرح أو تبرر.
             </p>
           </div>
 
