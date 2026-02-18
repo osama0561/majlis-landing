@@ -1,16 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { PrimaryButton } from './PrimaryButton';
 
-export const Hero: React.FC = () => {
-  const [spotsLeft, setSpotsLeft] = useState(100);
+const TOTAL_SEATS = 500;
+const CURRENT_MEMBERS = 88;
+const SEATS_LEFT = TOTAL_SEATS - CURRENT_MEMBERS;
 
-  // Simulated countdown - in real app, this would come from backend
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSpotsLeft((prev) => (prev > 0 ? prev : 0));
-    }, 30000);
-    return () => clearInterval(interval);
-  }, []);
+export const Hero: React.FC = () => {
 
   return (
     <section
@@ -27,7 +22,7 @@ export const Hero: React.FC = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-terracotta-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-terracotta-500"></span>
               </span>
-              <span className="font-semibold text-sm">الباقي {spotsLeft} مقعد بالسعر المخفض</span>
+              <span className="font-semibold text-sm">الباقي {SEATS_LEFT} مقعد من أصل {TOTAL_SEATS} بالسعر المخفض</span>
             </div>
 
             {/* Main Headline */}
@@ -44,7 +39,7 @@ export const Hero: React.FC = () => {
 
             {/* Subtitle */}
             <p className="body-lg text-forest-600/80 mb-8 max-w-xl mx-auto lg:mx-0">
-              تعلم أتمتة المهام بالذكاء الاصطناعي خطوة بخطوة، حتى لو ما عندك أي خلفية تقنية. انضم لـ +55 عضو بدأوا يتقنون مهارة المستقبل.
+              تعلم أتمتة المهام بالذكاء الاصطناعي خطوة بخطوة، حتى لو ما عندك أي خلفية تقنية. انضم لـ +{CURRENT_MEMBERS} عضو بدأوا يتقنون مهارة المستقبل.
             </p>
 
             {/* CTA Buttons */}
@@ -146,7 +141,7 @@ export const Hero: React.FC = () => {
                     <span className="text-2xl">🎯</span>
                   </div>
                   <div>
-                    <p className="font-bold text-forest-800">+55</p>
+                    <p className="font-bold text-forest-800">+{CURRENT_MEMBERS}</p>
                     <p className="text-sm text-forest-600/70">عضو نشط</p>
                   </div>
                 </div>

@@ -1,6 +1,11 @@
 import React from 'react';
 import { PrimaryButton } from './PrimaryButton';
 
+const TOTAL_SEATS = 500;
+const CURRENT_MEMBERS = 88;
+const SEATS_LEFT = TOTAL_SEATS - CURRENT_MEMBERS;
+const FILL_PERCENT = Math.round((CURRENT_MEMBERS / TOTAL_SEATS) * 100);
+
 const includedFeatures = [
   'دليل عملي لمرحلة الصفر',
   'نظام أتمتة هدية فور الانضمام',
@@ -29,7 +34,7 @@ export const Pricing: React.FC = () => {
             انضم الآن <span className="text-amber-400">ووفّر $30</span>
           </h2>
           <p className="body-lg text-cream-100/70 max-w-2xl mx-auto">
-            سعر الاشتراك سيرتفع بعد أول 100 عضو. احجز مقعدك الآن!
+            سعر الاشتراك سيرتفع بعد اكتمال أول {TOTAL_SEATS} عضو. احجز مقعدك الآن!
           </p>
         </div>
 
@@ -38,7 +43,7 @@ export const Pricing: React.FC = () => {
           <div className="relative bg-cream-50 rounded-3xl shadow-2xl overflow-hidden">
             {/* Badge */}
             <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-amber-500 to-amber-400 text-forest-800 text-center py-2 font-bold text-sm">
-              🔥 الباقي 100 مقعد فقط!
+              🔥 الباقي {SEATS_LEFT} مقعد من {TOTAL_SEATS}
             </div>
 
             <div className="p-8 pt-16">
@@ -86,6 +91,21 @@ export const Pricing: React.FC = () => {
                   </li>
                 ))}
               </ul>
+
+              {/* Seats Progress Bar */}
+              <div className="mb-6">
+                <div className="flex justify-between items-center mb-2 text-sm">
+                  <span className="text-forest-600/70">{CURRENT_MEMBERS} عضو انضم</span>
+                  <span className="font-semibold text-terracotta-600">{SEATS_LEFT} مقعد متبقي</span>
+                </div>
+                <div className="w-full bg-cream-200 rounded-full h-3 overflow-hidden">
+                  <div
+                    className="h-3 rounded-full bg-gradient-to-l from-terracotta-500 to-amber-400 transition-all duration-700"
+                    style={{ width: `${FILL_PERCENT}%` }}
+                  />
+                </div>
+                <p className="text-xs text-forest-500/60 mt-1.5 text-center">{FILL_PERCENT}% من المقاعد ممتلئة</p>
+              </div>
 
               {/* CTA Button */}
               <PrimaryButton
